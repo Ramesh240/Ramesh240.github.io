@@ -1,19 +1,54 @@
-<h1> Hi, I’m Ramesh Mangalagiri </h1>
-<hr>
-<h2>About Me</h2>
-<p>Hey there, I'm Ramesh, Software Developer at Cognizant with a passion for coding and crafting innovative solutions. This README is a showcase my journey, skills and aspirtaions. Let's dive in! </p>
-<h3>Skills and Interests </h3>
-<ul>
-  <li><b>Programming Languages:</b> C, C#, JAVA, Python, HTML, CSS, JavaScript</li>
-  <li><b>Frameworks/Libraries:</b> Dot Net MVC, React, Jquery, Bootstrap</li>
-  <li><b>Databases:</b> MySQL, SQlite</li>
-  <li><b>Developer Tools:</b> Git/Github, Azure DevOps(ADO),Visual studio, VS Code, Google Colab, Anaconda</li>
-  <li><b>Academic Coursework:</b> Data Structures, Operating Systems (Windows, Linux), CN, OOP, DBMS</li>
-  <li><b>Certifications:</b> C , Java, DBMS (NPTEL) | Machine learing using Python(Skifi Labs)</li>
-</ul>
-📫 How to reach me by rameshmangalagiri33@gmail.com
+# Hi, I'm Ramesh Mangalagiri 👋
 
-<!---
-Ramesh240/Ramesh240 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ramesh-mangalagiri-861b1a1a7)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Website-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ramesh240.github.io)
+[![Email](https://img.shields.io/badge/Email-rameshmangalagiri33@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rameshmangalagiri33@gmail.com)
+
+---
+
+### 👨‍💻 About Me
+Software Engineer with **4+ years of experience** developing, modernizing, and supporting enterprise web applications and mission-critical systems. 
+
+- 💼 **Current Role:** Software Engineer at **Cognizant Technology Solutions** (Bengaluru, India)
+- 🏢 **Client:** **Walgreens** (Fortune 50 Retail & Healthcare / Pharmacy Platform)
+- 🚀 **Specialties:** ASP.NET Core Web API, C#, React.js, Microsoft Azure, SQL Server, and Oracle 19c
+- 🤖 **Innovation:** GenAI workflows (Vibe Coding, Cursor AI), enterprise automation, and cloud migration feasibility
+
+---
+
+### 🛠️ Technical Arsenal
+
+- **Backend:** C#, ASP.NET Core Web API, ASP.NET MVC, Entity Framework Core, LINQ, REST APIs, Dependency Injection
+- **Frontend:** React.js, React Hooks, JavaScript (ES6+), HTML5, CSS3, Responsive UI
+- **Cloud & DevOps:** Microsoft Azure, Azure App Services, Azure DevOps, Git/GitHub, CI/CD
+- **Databases:** Microsoft SQL Server, Oracle 12c/19c, PostgreSQL, MySQL
+- **Enterprise Security:** Ping Federate (SAML 2.0), SSO, SSL/TLS Certificates, DNS Configuration
+- **Practices & Tools:** Agile/Scrum, Disaster Recovery (DR), GitHub Copilot, Visual Studio, VS Code
+
+---
+
+### 🌟 Key Initiatives & Innovations
+- **Smart Knowledge Dashboard (Vibe Coding):** GenAI-assisted solution for faster issue resolution and enterprise knowledge retrieval *(selected for organizational development)*.
+- **Admin Bulk User Provisioning via Excel:** Automated user ingestion engine cutting manual provisioning effort by **50%**.
+- **Azure Modernization Feasibility:** Conducted cloud readiness and cost optimization analysis for legacy enterprise applications migrating to Azure.
+- **Windows Server Migration:** Supported **2,000+ active users** with 0 defects and 100% application stability.
+- **Oracle 19c Upgrade:** Boosted production query performance by **20%** ahead of peak holiday season.
+
+---
+
+### 📜 Certifications
+- ☁️ **AZ-204T00:** Developing Solutions for Microsoft Azure *(Koenig Solutions / Microsoft Official Curriculum)*
+- 🤖 **GenAI Intermediate Voyager** *(Cognizant)*
+- ⚡ **Vibe Code Hackathon** *(Cursor AI)*
+- ☕ **Programming in Java** *(NPTEL)*
+- 🗄️ **Database Management Systems** *(NPTEL)*
+
+---
+
+### 🎓 Education
+- **Bachelor of Technology (B.Tech) — Computer Science & Engineering**  
+  *R.V.R. & J.C. College of Engineering, Guntur, AP (2018 – 2022)*
+
+---
+
+📫 **Get in Touch:** [rameshmangalagiri33@gmail.com](mailto:rameshmangalagiri33@gmail.com) | [LinkedIn](https://linkedin.com/in/ramesh-mangalagiri-861b1a1a7) | [Live Portfolio](https://ramesh240.github.io)

@@ -9,8 +9,7 @@
 ### 👨‍💻 About Me
 Software Engineer with **4+ years of experience** developing, modernizing, and supporting enterprise web applications and mission-critical systems. 
 
-- 💼 **Current Role:** Software Engineer at **Cognizant Technology Solutions** (Bengaluru, India)
-- 🏢 **Client:** **Walgreens** (Fortune 50 Retail & Healthcare / Pharmacy Platform)
+- 💼 **Current Role:** Software Engineer (Bengaluru, India)
 - 🚀 **Specialties:** ASP.NET Core Web API, C#, React.js, Microsoft Azure, SQL Server, and Oracle 19c
 - 🤖 **Innovation:** GenAI workflows (Vibe Coding, Cursor AI), enterprise automation, and cloud migration feasibility
 
@@ -37,8 +36,10 @@ Software Engineer with **4+ years of experience** developing, modernizing, and s
 ---
 
 ### 📜 Certifications
+- 🧠 **AI Augmented Software Engineer - Direct Accreditation** *(Skillspring)*
+- 💻 **GitHub Copilot - AI Augmented Software Engineer** *(Internal Certification, Skillspring)*
 - ☁️ **AZ-204T00:** Developing Solutions for Microsoft Azure *(Koenig Solutions / Microsoft Official Curriculum)*
-- 🤖 **GenAI Intermediate Voyager** *(Cognizant)*
+- 🤖 **GenAI Intermediate Voyager**
 - ⚡ **Vibe Code Hackathon** *(Cursor AI)*
 - ☕ **Programming in Java** *(NPTEL)*
 - 🗄️ **Database Management Systems** *(NPTEL)*

@@ -1,0 +1,43 @@
+[
+  {
+    "slug": "foliant",
+    "name": "Foliant",
+    "problem": "A 400-page PDF is hard to study from on a phone: no chapters, no highlights, and no easy way to revise what you read.",
+    "solution": "Foliant turns any PDF into an interactive reading book with chapter bookmarks, colour highlights, a focus reading mode and flashcard generation. It works offline, as a Progressive Web App and an Android app.",
+    "outcome": "",
+    "stack": ["JavaScript", "PWA", "Service Worker", "IndexedDB", "PDF.js", "Android"],
+    "links": [
+      { "label": "Read about the app", "href": "/apps/foliant/" },
+      { "label": "Source on GitHub", "href": "https://github.com/Ramesh240/foliant" }
+    ]
+  },
+  {
+    "slug": "smart-knowledge-dashboard",
+    "name": "Smart Knowledge Dashboard",
+    "problem": "When something breaks in production, engineers lose time hunting across error logs, runbooks and past fixes kept in different places.",
+    "solution": "A GenAI-assisted dashboard that links error logs, runbooks and resolution suggestions through semantic retrieval, designed to cut incident triage time. It began as a vibe-coding prototype and was selected for enterprise development.",
+    "outcome": "Selected for enterprise development.",
+    "stack": ["Generative AI", "Python", "React", "REST APIs", "Cursor AI"],
+    "links": []
+  },
+  {
+    "slug": "healthcare-retail-modules",
+    "name": "Enterprise healthcare retail modules",
+    "problem": "A Fortune 50 healthcare retail client needed pharmacy workflow modules that stay available and correct under heavy daily use.",
+    "solution": "I built resilient REST APIs, automated SQL Server backend services and dynamic React views, and led Prod and UAT migrations for 2,000+ users.",
+    "outcome": "Zero post-delivery defects and 100% SLA compliance.",
+    "stack": ["ASP.NET Core", "C#", "EF Core", "React", "SQL Server", "Azure"],
+    "links": []
+  },
+  {
+    "slug": "anki-interview-deck",
+    "name": "Full-stack .NET, React and Azure Anki deck",
+    "problem": "Interview preparation for full-stack .NET roles is scattered across documentation, videos and blog posts, and hard to revise on the move.",
+    "solution": "A curated deck of 390+ mobile-friendly spaced-repetition flashcards covering C#, ASP.NET Core, EF Core, React architecture, Azure infrastructure and SQL performance tuning.",
+    "outcome": "390+ cards, free on GitHub.",
+    "stack": [".NET 8", "React", "Azure", "Architecture", "Anki"],
+    "links": [
+      { "label": "Deck on GitHub", "href": "https://github.com/Ramesh240/101-preparation-anki-deck" }
+    ]
+  }
+]

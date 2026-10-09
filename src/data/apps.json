@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "foliant",
+    "name": "Foliant",
+    "tagline": "Turn any PDF into a book you can actually study from.",
+    "summary": "Foliant is an offline-first reader that turns a PDF into an interactive book. Read it in chapters, highlight in colour, switch to focus mode, and turn what you read into flashcards.",
+    "status": "Open source, for web (PWA) and Android",
+    "category": "Education",
+    "features": [
+      { "name": "Chapter bookmarks", "text": "Jump between chapters and pick up exactly where you stopped." },
+      { "name": "Colour highlights", "text": "Mark what matters in the colours you choose and find it again later." },
+      { "name": "Focus reading mode", "text": "Remove everything except the page so long reads stay comfortable." },
+      { "name": "Flashcard generation", "text": "Turn passages into question and answer cards that reveal on tap." },
+      { "name": "Works offline", "text": "Your library lives on your device, so reading never depends on a connection." },
+      { "name": "Installable", "text": "Add it to your home screen as a Progressive Web App, or use the Android app." }
+    ],
+    "stack": ["JavaScript", "PWA", "Service Worker", "IndexedDB", "PDF.js", "Android"],
+    "links": {
+      "github": "https://github.com/Ramesh240/foliant",
+      "web": "",
+      "android": ""
+    },
+    "privacy": {
+      "collectsData": false,
+      "storage": "on your device, in the browser's IndexedDB storage",
+      "lastUpdated": "2026-10-09"
+    }
+  }
+]

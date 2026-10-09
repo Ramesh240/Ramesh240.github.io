@@ -1,0 +1,61 @@
+[
+  {
+    "group": "Backend and APIs",
+    "items": [
+      { "name": "C# and ASP.NET Core", "context": "Modular web modules and REST APIs on a healthcare retail platform, built to SOLID principles." },
+      { "name": "Web API and ASP.NET MVC", "context": "Secure endpoints and server-rendered features, from the internship to production work." },
+      { "name": "Entity Framework Core and LINQ", "context": "Data access layers over SQL Server for enterprise modules." },
+      { "name": "Dependency injection and clean architecture", "context": "Layered, testable code that stays easy to change." }
+    ]
+  },
+  {
+    "group": "Frontend",
+    "items": [
+      { "name": "React and Hooks", "context": "Component-based interfaces wired to ASP.NET Web APIs." },
+      { "name": "JavaScript (ES6+), HTML5 and CSS3", "context": "Foliant, an offline-first PWA, is written in plain JavaScript." },
+      { "name": "Responsive design", "context": "Layouts that hold up from phones to wide desktops." },
+      { "name": "PWA, service workers and IndexedDB", "context": "Offline storage and caching in Foliant." }
+    ]
+  },
+  {
+    "group": "Cloud and DevOps",
+    "items": [
+      { "name": "Microsoft Azure and App Services", "context": "Feasibility study for migrating legacy applications; AZ-204 training." },
+      { "name": "Azure DevOps, Git and CI/CD", "context": "Version control and delivery pipelines for team projects." },
+      { "name": "Windows Server migration", "context": "Prod and UAT moves for 2,000+ users with zero post-delivery defects." },
+      { "name": "GitHub Copilot", "context": "AI-assisted workflows, with a Skillspring certification in September 2026." }
+    ]
+  },
+  {
+    "group": "Databases",
+    "items": [
+      { "name": "SQL Server and T-SQL", "context": "Backend services, query optimization, index tuning and failover scripts." },
+      { "name": "Oracle 12c and 19c", "context": "A 19c upgrade that sped up queries by 20% before peak season." },
+      { "name": "PostgreSQL and MySQL", "context": "Working knowledge for smaller applications and side projects." }
+    ]
+  },
+  {
+    "group": "Security and identity",
+    "items": [
+      { "name": "Single sign-on with Ping Federate", "context": "SAML 2.0 identity federation across environments." },
+      { "name": "SSL/TLS certificates and DNS", "context": "Configured across Prod and UAT during migrations." },
+      { "name": "Role-based access control", "context": "Used in the bulk provisioning tool and enterprise modules." }
+    ]
+  },
+  {
+    "group": "Delivery and practice",
+    "items": [
+      { "name": "Production support", "context": "Resolved P1 and P2 incidents while keeping 100% SLA compliance." },
+      { "name": "Disaster recovery", "context": "SQL failover scripts that raised operational readiness by 30%." },
+      { "name": "Documentation", "context": "Migration runbooks that cut onboarding effort by 40%." },
+      { "name": "Agile and code review", "context": "Sprint work with senior engineers and QA." }
+    ]
+  },
+  {
+    "group": "Generative AI",
+    "items": [
+      { "name": "AI-assisted engineering", "context": "Smart Knowledge Dashboard prototype, selected for enterprise development." },
+      { "name": "Vibe coding with Cursor", "context": "Hackathon prototyping of working systems at speed." }
+    ]
+  }
+]

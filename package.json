@@ -1,0 +1,12 @@
+{
+  "name": "rameshm-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static portfolio site for rameshm.com",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && npx --yes serve dist"
+  },
+  "engines": { "node": ">=18" }
+}

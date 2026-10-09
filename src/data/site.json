@@ -1,0 +1,74 @@
+{
+  "name": "Ramesh Mangalagiri",
+  "url": "https://rameshm.com",
+  "role": "Software Engineer",
+  "headline": "I build enterprise .NET, React and Azure software, and apps that make reading and learning easier.",
+  "description": "Portfolio of Ramesh Mangalagiri, a full-stack software engineer with 4+ years of experience in ASP.NET Core, React, SQL Server and Azure, and the maker of Foliant, a PDF-to-book reader.",
+  "email": "rameshmangalagiri33@gmail.com",
+  "github": "https://github.com/Ramesh240",
+  "linkedin": "https://linkedin.com/in/ramesh-mangalagiri-861b1a1a7",
+  "location": "Bengaluru, Karnataka, India",
+  "availability": "Open to hybrid and remote roles",
+  "trackRecord": [
+    { "figure": "4+ years", "text": "building enterprise web applications with C#, ASP.NET Core, React and SQL Server" },
+    { "figure": "2,000+ users", "text": "migrated across Prod and UAT environments with zero post-delivery defects" },
+    { "figure": "100% SLA", "text": "compliance while resolving P1 and P2 production incidents" },
+    { "figure": "20% faster", "text": "database queries after an Oracle 19c upgrade delivered before peak season" }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer",
+      "where": "Fortune 50 healthcare retail client",
+      "when": "2022 to present",
+      "place": "Bengaluru, India",
+      "points": [
+        "Designed modular web modules with ASP.NET Core, Web API, EF Core and SQL Server, following SOLID principles and clean architecture.",
+        "Built responsive React interfaces with Hooks, integrated with ASP.NET Web APIs.",
+        "Led Prod and UAT migrations for 2,000+ users with zero post-delivery defects, and executed an Oracle 19c upgrade that sped up database queries by 20%.",
+        "Implemented single sign-on with Ping Federate (SAML), SSL certificates and DNS configuration across environments.",
+        "Wrote SQL failover scripts that raised operational readiness by 30%, and resolved P1 and P2 incidents while holding 100% SLA compliance.",
+        "Wrote migration runbooks that cut onboarding effort by 40%, and championed GitHub Copilot and AI-assisted workflows."
+      ]
+    },
+    {
+      "role": "Full-Stack Development Intern",
+      "where": "Enterprise services team",
+      "when": "2022",
+      "place": "Bengaluru, India",
+      "points": [
+        "Built core application features with ASP.NET MVC, React, SQL Server, HTML5, CSS3 and JavaScript.",
+        "Worked with senior engineers and QA in Agile sprints to fix UI defects and optimize REST APIs.",
+        "Implemented responsive client-side data binding and secure API endpoints."
+      ]
+    }
+  ],
+  "initiatives": [
+    {
+      "name": "Smart Knowledge Dashboard",
+      "text": "A GenAI-assisted knowledge retrieval and issue resolution engine, prototyped by vibe coding and selected for enterprise development."
+    },
+    {
+      "name": "Bulk user provisioning from Excel",
+      "text": "An upload-based tool with schema validation, role assignment and audit checks that cut manual provisioning effort by 50%."
+    },
+    {
+      "name": "Azure modernization study",
+      "text": "A technical and financial feasibility analysis for moving legacy enterprise applications to Azure App Services."
+    }
+  ],
+  "education": {
+    "degree": "B.Tech, Computer Science and Engineering",
+    "school": "R.V.R. & J.C. College of Engineering, Guntur, Andhra Pradesh",
+    "when": "2018 to 2022",
+    "foundations": "Data structures and algorithms, object-oriented programming, computer networks, operating systems and database management systems."
+  },
+  "certifications": [
+    { "name": "AI Augmented Software Engineer", "by": "Skillspring", "when": "September 2026" },
+    { "name": "GitHub Copilot: AI Augmented Software Engineer", "by": "Skillspring", "when": "September 2026" },
+    { "name": "AZ-204T00: Developing Solutions for Microsoft Azure", "by": "Koenig Solutions, official Microsoft curriculum", "when": "" },
+    { "name": "GenAI Intermediate Voyager", "by": "GenAI Academy", "when": "" },
+    { "name": "Vibe Code Hackathon", "by": "Cursor AI", "when": "" },
+    { "name": "Programming in Java", "by": "NPTEL", "when": "" },
+    { "name": "Database Management Systems", "by": "NPTEL", "when": "" }
+  ]
+}

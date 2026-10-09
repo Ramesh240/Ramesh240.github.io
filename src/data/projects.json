@@ -7,6 +7,7 @@
     "outcome": "",
     "stack": ["JavaScript", "PWA", "Service Worker", "IndexedDB", "PDF.js", "Android"],
     "links": [
+      { "label": "Try the web app", "href": "https://foliant.netlify.app/" },
       { "label": "Read about the app", "href": "/apps/foliant/" },
       { "label": "Source on GitHub", "href": "https://github.com/Ramesh240/foliant" }
     ]
@@ -34,10 +35,11 @@
     "name": "Full-stack .NET, React and Azure Anki deck",
     "problem": "Interview preparation for full-stack .NET roles is scattered across documentation, videos and blog posts, and hard to revise on the move.",
     "solution": "A curated deck of 390+ mobile-friendly spaced-repetition flashcards covering C#, ASP.NET Core, EF Core, React architecture, Azure infrastructure and SQL performance tuning.",
-    "outcome": "390+ cards, free on GitHub.",
+    "outcome": "390+ cards, free on GitHub & AnkiWeb.",
     "stack": [".NET 8", "React", "Azure", "Architecture", "Anki"],
     "links": [
-      { "label": "Deck on GitHub", "href": "https://github.com/Ramesh240/101-preparation-anki-deck" }
+      { "label": "Deck Overview & Pro (₹99)", "href": "/anki/" },
+      { "label": "GitHub", "href": "https://github.com/Ramesh240/101-preparation-anki-deck" }
     ]
   }
 ]

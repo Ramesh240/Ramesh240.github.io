@@ -17,7 +17,7 @@
     "stack": ["JavaScript", "PWA", "Service Worker", "IndexedDB", "PDF.js", "Android"],
     "links": {
       "github": "https://github.com/Ramesh240/foliant",
-      "web": "",
+      "web": "https://foliant.netlify.app/",
       "android": ""
     },
     "privacy": {

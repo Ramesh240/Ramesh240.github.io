@@ -1,5 +1,17 @@
 [
   {
+    "slug": "forge-os",
+    "name": "ForgeOS — Identity & Skill Progression System",
+    "problem": "Traditional habit trackers focus on checklists, making it hard to connect daily routines to the person you want to become.",
+    "solution": "ForgeOS ties routines to personal identities and turns deliberate actions into votes for who you are becoming, with XP progression, continuity tracking, and Android and web apps.",
+    "outcome": "Web app and Android app available.",
+    "stack": ["Next.js", "Android", "Identity-based habits", "Progression system"],
+    "links": [
+      { "label": "Open ForgeOS", "href": "https://forge-os-eta-five.vercel.app/" },
+      { "label": "Source on GitHub", "href": "https://github.com/Ramesh240/forge-os" }
+    ]
+  },
+  {
     "slug": "foliant",
     "name": "Foliant",
     "problem": "A 400-page PDF is hard to study from on a phone: no chapters, no highlights, and no easy way to revise what you read.",
@@ -40,6 +52,18 @@
     "links": [
       { "label": "Deck Overview & Pro (₹99)", "href": "/anki/" },
       { "label": "GitHub", "href": "https://github.com/Ramesh240/101-preparation-anki-deck" }
+    ]
+  },
+  {
+    "slug": "system-design-interview-prep",
+    "name": "System Design Interview Mastery",
+    "problem": "System design interview prep is usually overwhelming, filled with generic textbook diagrams and lacking realistic verbal answers, scale calculations, and practical .NET/cloud context.",
+    "solution": "A structured 6-day curriculum with 60 high-yield questions, verbal delivery scripts, ASCII architecture blueprints, and an interactive 3D flashcard study engine.",
+    "outcome": "60 questions, 6 days, interactive web portal & roadmap.",
+    "stack": ["System Design", "Distributed Systems", "C# & .NET", "Azure", "Interactive Flashcards"],
+    "links": [
+      { "label": "Explore System Design", "href": "/system-design/" },
+      { "label": "Roadmap", "href": "/system-design/roadmap/" }
     ]
   }
 ]

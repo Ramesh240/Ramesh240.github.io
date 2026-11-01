@@ -63,7 +63,6 @@
     "foundations": "Data structures and algorithms, object-oriented programming, computer networks, operating systems and database management systems."
   },
   "certifications": [
-    { "name": "AI Augmented Software Engineer", "by": "Skillspring", "when": "September 2026" },
     { "name": "GitHub Copilot: AI Augmented Software Engineer", "by": "Skillspring", "when": "September 2026" },
     { "name": "AZ-204T00: Developing Solutions for Microsoft Azure", "by": "Koenig Solutions, official Microsoft curriculum", "when": "" },
     { "name": "GenAI Intermediate Voyager", "by": "GenAI Academy", "when": "" },

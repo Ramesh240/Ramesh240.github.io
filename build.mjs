@@ -4,6 +4,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildSystemDesignPages } from './src/system-design-builder.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SRC = join(ROOT, 'src');
@@ -14,6 +15,7 @@ const site = readJson('data/site.json');
 const skills = readJson('data/skills.json');
 const projects = readJson('data/projects.json');
 const apps = readJson('data/apps.json');
+const systemDesign = readJson('data/system-design.json');
 
 const SITE = site.url;
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
@@ -50,24 +52,51 @@ function markdown(src) {
   const lines = src.replace(/\r/g, '').split('\n');
   const out = [];
   let i = 0;
-  const startsBlock = (l) => /^(```|#{2,3}\s|\s*[-*]\s|\s*\d+\.\s|>)/.test(l);
+  const startsBlock = (l) => /^(```|#{1,4}\s|\s*[-*]\s|\s*\d+\.\s|>|\s*\|.*\|\s*$|^-{3,}$)/.test(l);
   while (i < lines.length) {
     const l = lines[i];
     if (!l.trim()) { i++; continue; }
+    if (/^-{3,}$/.test(l.trim())) {
+      out.push('<hr class="divider">');
+      i++;
+      continue;
+    }
     if (/^```/.test(l)) {
       const lang = l.slice(3).trim();
       const buf = [];
       i++;
       while (i < lines.length && !/^```/.test(lines[i])) buf.push(lines[i++]);
       i++;
-      out.push(`<pre><code${lang ? ` class="language-${esc(lang)}"` : ''}>${esc(buf.join('\n'))}</code></pre>`);
+      const codeText = buf.join('\n');
+      const isDiagram = /[┌┐└┘├┤┬┴┼│─▼▲►◄↓↑→←]/.test(codeText) || lang === 'text';
+      out.push(`<div class="code-block-wrap${isDiagram ? ' diagram-wrap' : ''}">${isDiagram ? '<span class="code-badge">Architecture Blueprint</span>' : (lang ? `<span class="code-badge">${esc(lang)}</span>` : '')}<pre><code class="${isDiagram ? 'ascii-diagram ' : ''}${lang ? `language-${esc(lang)}` : ''}">${esc(codeText)}</code></pre></div>`);
       continue;
     }
-    const h = l.match(/^(#{2,3})\s+(.*)/);
+    const h = l.match(/^(#{1,4})\s+(.*)/);
     if (h) {
       const n = h[1].length;
-      out.push(`<h${n} id="${slugify(h[2])}">${inline(h[2])}</h${n}>`);
+      const tag = 'h' + Math.min(6, n);
+      out.push(`<${tag} id="${slugify(h[2])}">${inline(h[2])}</${tag}>`);
       i++;
+      continue;
+    }
+    if (/^\s*\|.*\|\s*$/.test(l)) {
+      const rows = [];
+      while (i < lines.length && /^\s*\|.*\|\s*$/.test(lines[i])) {
+        const rawRow = lines[i++].trim();
+        if (/^\|[-:\s|]+\|$/.test(rawRow)) continue;
+        const cols = rawRow.slice(1, -1).split('|').map((c) => c.trim());
+        rows.push(cols);
+      }
+      if (rows.length) {
+        const header = rows[0];
+        const body = rows.slice(1);
+        out.push('<div class="table-wrap"><table><thead><tr>' +
+          header.map((c) => `<th>${inline(c)}</th>`).join('') +
+          '</tr></thead><tbody>' +
+          body.map((r) => '<tr>' + r.map((c) => `<td>${inline(c)}</td>`).join('') + '</tr>').join('') +
+          '</tbody></table></div>');
+      }
       continue;
     }
     if (/^\s*[-*]\s+/.test(l)) {
@@ -85,7 +114,7 @@ function markdown(src) {
     if (/^>\s?/.test(l)) {
       const buf = [];
       while (i < lines.length && /^>\s?/.test(lines[i])) buf.push(lines[i++].replace(/^>\s?/, ''));
-      out.push(`<blockquote><p>${inline(buf.join(' '))}</p></blockquote>`);
+      out.push(`<blockquote class="callout-quote"><p>${inline(buf.join(' '))}</p></blockquote>`);
       continue;
     }
     const buf = [];
@@ -137,6 +166,7 @@ const posts = loadPosts();
 
 const NAV = [
   ['Home', '/'],
+  ['System Design', '/system-design/'],
   ['Skills', '/skills/'],
   ['Apps', '/apps/'],
   ['Projects', '/projects/'],
@@ -488,6 +518,37 @@ function page(path, opts, lastmod) {
   </div>
 </section>
 
+<!-- System Design Interview Mastery Spotlight -->
+<section style="padding-top: 1.5rem; padding-bottom: 2rem;">
+  <div class="wrap">
+    <div class="card sd-home-spotlight-card">
+      <div class="sd-spotlight-inner">
+        <div class="sd-spotlight-text">
+          <div class="status-pill" style="border-color: rgba(99, 102, 241, 0.4); background: rgba(99, 102, 241, 0.12); color: var(--primary-light); margin-bottom: 0.75rem;">
+            <span class="pulse-dot" style="background: var(--primary-light);"></span>
+            <span>6-DAY INTERVIEW MASTERY &middot; 60 QUESTIONS &middot; 3D FLASHCARDS</span>
+          </div>
+          <h2 style="font-size: 1.85rem; margin-bottom: 0.6rem;">System Design <span class="gradient-text">Interview Mastery</span></h2>
+          <p class="muted" style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            High-yield system design interview preparation with verbal answer scripts, ASCII architecture blueprints, C# enterprise examples, and interactive 3D flashcards.
+          </p>
+          <div class="actions" style="margin-top: 0;">
+            <a class="btn" href="/system-design/">Explore System Design Portal &rarr;</a>
+            <a class="btn-ghost" href="/system-design/day-1/">Start Day 1</a>
+            <a class="btn-ghost" href="/system-design/roadmap/">5-Phase Roadmap</a>
+          </div>
+        </div>
+        <div class="sd-spotlight-stat-box">
+          <div class="sd-spotlight-stat"><span class="sd-stat-big">6</span><span>Intensive Days</span></div>
+          <div class="sd-spotlight-stat"><span class="sd-stat-big">60</span><span>High-Yield Q&amp;As</span></div>
+          <div class="sd-spotlight-stat"><span class="sd-stat-big">14</span><span>Practical Systems</span></div>
+          <div class="sd-spotlight-stat"><span class="sd-stat-big">100%</span><span>Interactive</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <div class="section-head">
@@ -832,7 +893,7 @@ ${pageHead('Projects & Architecture', 'Each project card presents the production
     { code: '11', name: 'Project-Based Questions', desc: 'Enterprise architecture walkthroughs, system trade-offs, and design justifications' },
     { code: '12', name: 'Advanced React', desc: 'State management, custom hooks, performance profiling, and SSR architecture' },
     { code: '13', name: 'Docker & Kubernetes', desc: 'Containerization, pod lifecycle, deployments, and cluster management' },
-    { code: '13', name: 'Microservices Architecture', desc: 'API gateways, event-driven design, service discovery, and resilient messaging' },
+    { code: '14', name: 'Microservices Architecture', desc: 'API gateways, event-driven design, service discovery, and resilient messaging' },
   ];
 
   const subdeckCards = subdecks.map((s) => `
@@ -933,9 +994,9 @@ ${pageHead('Projects & Architecture', 'Each project card presents the production
       </div>
       <div class="card">
         <h3 style="display: flex; align-items: center; gap: 0.5rem;">
-          <span style="font-size: 1.3rem;">🗂️</span> 13 Topic-Based Subdecks
+          <span style="font-size: 1.3rem;">🗂️</span> ${subdecks.length} Topic-Based Subdecks
         </h3>
-        <p class="muted">Organized into 13 modular subdecks so you can drill deep into a weak topic or shuffle them all together for mock interview simulations.</p>
+        <p class="muted">Organized into ${subdecks.length} modular subdecks so you can drill deep into a weak topic or shuffle them all together for mock interview simulations.</p>
       </div>
       <div class="card">
         <h3 style="display: flex; align-items: center; gap: 0.5rem;">
@@ -973,7 +1034,7 @@ ${pageHead('Projects & Architecture', 'Each project card presents the production
           <li><strong style="color: var(--text-main);">Download:</strong> Get <code>101_Preparation.apkg</code> from <a href="https://ankiweb.net/shared/info/101042386" rel="noopener" target="_blank">AnkiWeb</a> or the <a href="https://github.com/Ramesh240/101-preparation-anki-deck" rel="noopener" target="_blank">GitHub release</a>.</li>
           <li><strong style="color: var(--text-main);">Open Anki:</strong> Launch Anki on Desktop, AnkiDroid (Android), or AnkiMobile (iOS).</li>
           <li><strong style="color: var(--text-main);">Import:</strong> Click <em>File &rarr; Import</em> (or tap the downloaded file directly on mobile).</li>
-          <li><strong style="color: var(--text-main);">Ready:</strong> All 13 subdecks are automatically generated under the <em>101 Preparation</em> root deck!</li>
+          <li><strong style="color: var(--text-main);">Ready:</strong> All ${subdecks.length} subdecks are automatically generated under the <em>101 Preparation</em> root deck!</li>
         </ol>
       </div>
       <div class="card" style="display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
@@ -1001,6 +1062,18 @@ ${pageHead('Projects & Architecture', 'Each project card presents the production
     body,
   });
 }
+
+// System Design Interview Preparation (6 Days · 60 Questions · 3D Flashcards · Roadmap)
+buildSystemDesignPages({
+  page,
+  layout,
+  markdown,
+  esc,
+  slugify,
+  systemDesign,
+  SITE,
+  BUILD_DATE,
+});
 
 // Blog
 {
